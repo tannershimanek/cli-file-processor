@@ -2,7 +2,7 @@
 
 "use strict"
 
-import path, { dirname } from "path";
+import path from "path";
 import fs from "fs";
 import zlib from "zlib";
 import { Transform } from "stream";
@@ -35,8 +35,6 @@ let OUT_PATH = path.join(BASE_PATH, OUT_FILENAME);
 // to methods that allow us to cancel or timeout async methods.
 processFile = CAF(processFile);
 
-// --- --- ---
-
 // Handle our arguments.
 if (args.outfile) { // overwrite OUT_FILENAME
     OUT_PATH = path.join(BASE_PATH, args.outfile);
@@ -63,9 +61,6 @@ else if (args.file) { // handle file command
 else {
     error("Usage incorrect.", /*showHelp=*/true);
 }
-
-// --- --- ---
-
 
 // ************************************
 
