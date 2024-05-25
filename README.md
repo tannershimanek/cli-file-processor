@@ -4,19 +4,22 @@
 
 Examples:
 
-`cat ./files/hello.txt | ./fp.js --in --out`
-`cat ./files/hello.txt | ./fp.js --in --outfile=out.txt`
-`./fp.js file=./files/hello.txt`
+- `cat ./files/hello.txt | ./fp.js --in --out`
+- `cat ./files/hello.txt | ./fp.js --in --outfile=out.txt`
+- `./fp.js file=./files/hello.txt`
 
 
 Commands:
 
-1. `--in` : read from stdin
+1. `-, --in` : read from stdin
 2. `--file` : read from filepath
 3. `--out` : write to stdout
 4. `--outfile` : write to a specified outfile
 
 If no file parameter is specified, and `--out` is not used. The script will write to `out.txt`
+
+5. `--compress` : compress a file (gzip)
+6. `--uncompress` : uncompress a file
 
 
 
