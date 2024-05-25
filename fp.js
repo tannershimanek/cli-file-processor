@@ -65,7 +65,7 @@ else {
 // ************************************
 
 function printHelp() {
-    console.log("ex3 usage:");
+    console.log("fp usage:");
     console.log("");
     console.log("--help                      print this help");
     console.log("-, --in                     read file from stdin");
