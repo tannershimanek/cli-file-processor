@@ -35,3 +35,6 @@ If no file parameter is specified, and `--out` is not used. The script will writ
 
 to send both stdout and stderr to the same file run `node ./fp.js 2> out.txt 1>&2`
 the `1>&2` sends stdout to the address of stderr. 
+
+## Contributing
+Coming soon!
